@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Amour Humour et Délire
+name: Le monde de demain
 
 # Short bio or description (displayed in the header)
 description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-0/cp0/c0.0.720.720a/s118x90/100105749_2818435808254263_114277908536623104_n.jpg?_nc_cat=102&ccb=2&_nc_sid=70495d&_nc_ohc=KUCqFSXyMXUAX_8fGN7&_nc_ht=scontent-cdg2-1.xx&tp=28&oh=c6379f2c2eee21ac05dbcdaaaee7acd5&oe=5FEEBE70
+avatar: 96797009_126095652395298_3434195174878609408_n.jpg
 
 #
 # Flags below are optional
@@ -19,7 +19,7 @@ avatar: https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-0/cp0/c0.0.720.720a/s118x90/
 footer-links:
   dribbble:
   email:
-  facebook: groups/544583152882028
+  facebook: mondedemain
   flickr:
   github: 
   instagram:
@@ -41,7 +41,7 @@ google_analytics: UA-8720831-19
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: "http://localhost:4000"
+url: "http://www.lemondededemain.net/"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
