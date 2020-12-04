@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  
+
+  {%if page.featured-img %}
+  {% include post-featured-image.html image= page.featured-img alt=page.featured-img-alt %}
+  <img class="feat-img" src="{{ page.featured-img }}" alt="{{ page.featured-img-alt | default: 'image representing a theme in this article' }}" />
+  {% endif %}
+
+  <div class="date">
+
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+
+  <div class="fb-like" data-href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" data-width="" data-layout="box_count" data-action="like" data-size="small" data-share="false"></div>
+
+  {% include disqus.html %}
+</article>
