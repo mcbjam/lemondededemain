@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mon post sur le maquillage
-featured-img: "https://content.fortune.com/wp-content/uploads/2017/01/google.jpeg"
+featured-img: "terre.jpg"
 featured-img-alt: bobobo
 description: toto
 tags: amour
@@ -10,4 +10,11 @@ tags: amour
 
 ---
 
-L e maquillage est une bonne solution ...;
+Le maquillage est une bonne solution ...;
+
+
+
+
+ {%if page.featured-img %}
+  {% include post-featured-image.html image= page.featured-img alt=page.featured-img-alt %}
+  {% endif %}
