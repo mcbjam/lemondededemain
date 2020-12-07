@@ -27,6 +27,7 @@ layout: default
           <div class="card-deck">
 
             {% for post in site.posts %}
+            {% if post.url!=page.url %}
               <div class="card" style="min-width: 33%;margin-bottom:1rem">
                 {% if post.featured-img %}
                 <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="card-img-top" style="max-height: 20rem;"/>
@@ -41,7 +42,8 @@ layout: default
                   <small class="text-muted"><a href="{{ site.baseurl }}{{ post.url }}" >Lire la suite</a></small>
                 </div>
               </div>
-            {% endfor %}
+              {% endif %} {% endfor %}
           </div>
-  
+
+
 
