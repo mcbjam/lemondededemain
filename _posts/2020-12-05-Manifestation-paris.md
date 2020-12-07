@@ -15,4 +15,8 @@ Image des manifestations à Paris le 5 Décembre
 <div class="video-container">
   <iframe src="https://www.youtube.com/embed/ZTgPtkc2ASU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<hr>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/WuBXyxXkW18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
