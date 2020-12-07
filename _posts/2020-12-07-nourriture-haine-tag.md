@@ -1,6 +1,6 @@
 ---
 
-layout: post
+layout: post_full
 title: Nourriture contre la haine
 featured-img-url: "https://www.dailymotion.com/thumbnail/video/x7xxc0o"
 featured-img-alt: Censure et Liberté d'expression

@@ -1,6 +1,6 @@
 ---
 
-layout: post
+layout: post_full
 title: Censure et Liberté d'expression
 featured-img: "LIBERTE-EXPRESSION.jpg"
 featured-img-alt: Censure et Liberté d'expression
