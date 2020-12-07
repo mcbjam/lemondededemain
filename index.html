@@ -8,7 +8,9 @@ layout: default
     {% for post in site.posts %}
     <div class="col-6">
       <div class="card">
-        <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="img-fluid"/>
+        <a href="{{ site.baseurl }}{{ post.url }}" >
+          <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="img-fluid"/>
+        </a>
         <div class="card-body">
           <h5 class="card-title">{{ post.title }}</h5>
           <p class="card-text">{{ post.description }}</p>

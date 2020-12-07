@@ -1,16 +1,16 @@
 ---
 layout: post_full
-title: Le coronavirus dans le monde
+title: L'épidemie de coronavirus dans le monde
 featured-img: "coronavirus.jpg"
 featured-img-alt: Les chiffres du Coronavirus
-description: Nombre de mort de Coronavirus dans le monde
-tags: amour
+description: Les chiffres clés du Coronavirus
+tags: coronavirus
 
 
 
 ---
 
-Suivi du Coronavirus dans le monde
+Suivi de l'épidémie du Coronavirus dans le monde
 
 Données mis à jour le 06/12/2020 à partir des données du Centre européen de prévention et de contrôle des maladies
 Source : https://www.ecdc.europa.eu
