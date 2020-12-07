@@ -29,7 +29,11 @@ layout: default
                 <div class="col-12" style="margin-bottom: 1rem;">
                   <div class="card">
                     <a href="{{ site.baseurl }}{{ post.url }}" >
-                    <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="img-fluid"/>
+                      {% if post.featured-img %}
+                      <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="img-fluid"/>
+                      {% else %}
+                      <img src="{{post.featured-img-url}}" class="img-fluid" />
+                      {% endif %}
                   </a>
                     <div class="card-body">
                       <h5 class="card-title">{{ post.title }}</h5>
