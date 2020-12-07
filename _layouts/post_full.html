@@ -24,29 +24,24 @@ layout: default
 
  
           <h2>Autres articles :</h2>
-      <div class="row" ">
-        {% for post in site.posts %}
-        {% if post.url!=page.url %}
-        <div class="col-12" style="margin-bottom:1rem">
-          <div class="card">
-            <a href="{{ site.baseurl }}{{ post.url }}" >
+          <div class="card-deck">
+
+            {% for post in site.posts %}
+              <div class="card" style="min-width: 33%;margin-bottom:1rem">
                 {% if post.featured-img %}
-                <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="img-fluid"/>
+                <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="card-img-top" style="max-height: 20rem;"/>
                 {% else %}
-                <img src="{{post.featured-img-url}}" class="img-fluid" />
+                <img src="{{post.featured-img-url}}" class="card-img-top" style="max-height: 20rem;" />
                 {% endif %}
-              </a>
-            <div class="card-body">
-              <h5 class="card-title">{{ post.title }}</h5>
-              <p class="card-text">{{ post.description }}</p>
-              <a href="{{ site.baseurl }}{{ post.url }}" >Lire la suite</a>
-            </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{ post.title }}</h5>
+                  <p class="card-text">{{ post.description }}</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><a href="{{ site.baseurl }}{{ post.url }}" >Lire la suite</a></small>
+                </div>
+              </div>
+            {% endfor %}
           </div>
-      </div>
-    
-      {% endif %}
-        {% endfor %}
-  
-</div>
   
 

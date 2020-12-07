@@ -27,3 +27,25 @@ layout: default
   </div>
     {% endfor %}
 </div>
+
+
+
+<div class="card-deck">
+
+  {% for post in site.posts %}
+    <div class="card" style="min-width: 33%;margin-bottom:1rem">
+      {% if post.featured-img %}
+      <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="card-img-top" style="max-height: 20rem;"/>
+      {% else %}
+      <img src="{{post.featured-img-url}}" class="card-img-top" style="max-height: 20rem;" />
+      {% endif %}
+      <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">{{ post.description }}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><a href="{{ site.baseurl }}{{ post.url }}" >Lire la suite</a></small>
+      </div>
+    </div>
+  {% endfor %}
+</div>
