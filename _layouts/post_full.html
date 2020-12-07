@@ -24,26 +24,24 @@ layout: default
 
  
           <h2>Autres articles :</h2>
-          <div class="card-deck">
+          <div class="row">
 
             {% for post in site.posts %}
             {% if post.url!=page.url %}
-              <div class="card" style="min-width: 33%;margin-bottom:1rem">
+            <div class="col-md-4">
+              <div class="card card-inverse card-primary text-center">
                 {% if post.featured-img %}
-                <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="card-img-top" style="max-height: 20rem;"/>
+                <img src="{{site.url}}{{site.baseurl}}/images/{{post.featured-img}}" class="card-img-top" style="max-height: 10rem;"/>
                 {% else %}
-                <img src="{{post.featured-img-url}}" class="card-img-top" style="max-height: 20rem;" />
+                <img src="{{post.featured-img-url}}" class="card-img-top" style="max-height: 10rem;" />
                 {% endif %}
                 <div class="card-body">
-                  <h5 class="card-title">{{ post.title }}</h5>
+                  <h4 class="card-title">{{ post.title }}</h4>
                   <p class="card-text">{{ post.description }}</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted"><a href="{{ site.baseurl }}{{ post.url }}" >Lire la suite</a></small>
+                  <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary">Lire la suite</a>
                 </div>
               </div>
-              {% endif %} {% endfor %}
-          </div>
-
-
+            </div>
+            {% endif %}{% endfor %}
+              </div>
 
